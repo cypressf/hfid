@@ -20,6 +20,9 @@
     max-width:50em;
     margin: 0 auto;
   }
+  .sidenav ul{
+    position:fixed;
+  }
   .sidenav li.active a, .sidenav li a:active, .sidenav li.active a:hover{
     background:#0a71c8;
     color:#fff;
@@ -38,6 +41,11 @@
   }
   .aside {
     float:right;
+  }
+  @media (max-width: 767px) {
+    .sidenav ul{
+      position:static;
+    }
   }
   </style>
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -69,19 +77,18 @@
 <div class="container">
 <div class="row">
 <div class="span3 sidenav">
-<ul class="nav nav-tabs nav-stacked affix">
-  <li><a href="#overview">Overview</a></li>
-  <li><a href="#interviews">Interviews</a></li>
-  <li><a href="#personas">Personas</a></li>
-  <li><a href="#tasks">Tasks</a></li>
-  <li><a href="#scenarios">Scenarios</a></li>
-  <li><a href="#story_boards">Story Boards</a></li>
-  <li><a href="#work_distribution">Work Distribution</a></li>
-</ul>
+  <ul class="nav nav-tabs nav-stacked">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#interviews">Interviews</a></li>
+    <li><a href="#personas">Personas</a></li>
+    <li><a href="#tasks">Tasks</a></li>
+    <li><a href="#scenarios">Scenarios</a></li>
+    <li><a href="#story_boards">Story Boards</a></li>
+    <li><a href="#work_distribution">Work Distribution</a></li>
+  </ul>
 </div>
 
 <div class="span9" id="right-column">
-<div class="row">
   <h1>Needs Analysis</h1>
   
   <h2 id="overview">Overview</h2>
@@ -374,7 +381,6 @@ Once we had more developed personas, we brainstormed myriad different solutions 
 </tr>
 </tbody>
 </table>
-</div>
 
 </div> <!-- right-column -->
 
