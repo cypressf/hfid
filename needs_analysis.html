@@ -20,6 +20,10 @@
     max-width:50em;
     margin: 0 auto;
   }
+  .sidenav li.active a, .sidenav li a:active, .sidenav li.active a:hover{
+    background:#0a71c8;
+    color:#fff;
+  }
   </style>
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
@@ -30,7 +34,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".sidenav">
 
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
@@ -48,10 +52,21 @@
 </div>
 
 <div class="container">
+<div class="row">
+<div class="span3 sidenav">
+<ul class="nav nav-tabs nav-stacked affix">
+  <li class="active"><a href="#interviews">Interviews</a></li>
+  <li><a href="#tasks">Tasks</a></li>
+  <li><a href="#scenarios">Scenarios</a></li>
+  <li><a href="#story_boards">Story Boards</a></li>
+  <li><a href="#work_distribution">Work Distribution</a></li>
+</ul>
+</div>
 
+<div class="span9">
 <div class="row">
   <h1>Needs Analysis</h1>
-  <h2>To do a needs analysis, we first interviewed trainers</h2>
+  <h2 id="interviews">To do a needs analysis, we first interviewed trainers</h2>
 
 <div class="span3">
 <h4>Member Services Guy</h4>
@@ -133,7 +148,7 @@
 </div>
 
 <div class="row">
-  <h2>We created a list of common tasks for personal trainers</h2>
+  <h2 id="tasks">We created a list of common tasks for personal trainers</h2>
 
 <p class="span3">
   We then used this list and our personas to create a mapping between a persona and how important a task was to them (right scale) and how often they did this task (left scale).
@@ -155,7 +170,7 @@
 
 
 <div class="row">
-<h2>Scenarios</h2>
+<h2 id="scenarios">Scenarios</h2>
 <p class="span6">
   We created six scenarios (either Before and Afters or illustrations of existing frustrations) that we would like to tackle with our project.
 </p>
@@ -248,7 +263,7 @@
 
 
 <div class="row">
-<h2>Story Boards</h2>
+<h2 id="story_boards">Story Boards</h2>
 <p class="span6">
 Once we had more developed personas, we brainstormed myriad different solutions for the problems each persona had. Initially, these solutions were around scheduling and client communication, but we pivoted to focusing on communicating a client’s goals to the trainer and helping trainers communicate progress to their clients. Keeping these goals in mind, we created three storyboards. One shows a system that a trainer can use to help find out a client’s goals, another helps trainers how their clients how their workouts are relevant to their goals, and a third helps trainers input information about each client’s workouts and sends that information to clients in a way that’s easy to consume and understand. All three ideas try to empower the trainer to motivate their client through showing the client progress and relevance to goals.</p>
 </div>
@@ -290,7 +305,7 @@ Once we had more developed personas, we brainstormed myriad different solutions 
 
 
 <div class="row">
-<h2>Work distribution</h2>
+<h2 id="work_distribution">Work distribution</h2>
 <table class="table">
   <thead>
     <tr>
@@ -354,7 +369,8 @@ Once we had more developed personas, we brainstormed myriad different solutions 
 </tbody>
 </table>
 </div>
-
+</div>
+</div>
 <hr>
 
 <footer>
