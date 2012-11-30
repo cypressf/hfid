@@ -12,6 +12,37 @@
     padding-bottom: 40px;
     padding-left: 20px;
     }
+     .sidenav ul{
+      position:fixed;
+    }
+    .sidenav li.active a, .sidenav li a:active, .sidenav li.active a:hover{
+      background:#0a71c8;
+      color:#fff;
+    }
+    h2 {
+      padding-top:1.5em;
+    }
+    span.comment {
+      background:#797880;
+      color:#eee;
+      border:1px solid #b5b3bf;
+      max-width:80%;
+      display:block;
+      padding:1em;
+      margin:1em auto;
+    }
+    .aside {
+      float:right;
+    }
+    @media (max-width: 767px) {
+      .sidenav ul{
+        position:static;
+      }
+    }
+    img {
+
+        width:300px;
+    }
     </style>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
@@ -43,22 +74,60 @@
     </div>
 </div>
 <body>
+    <div class="container">
+<!--         <div class="span3 sidenav">
+          <ul class="nav nav-tabs nav-stacked">
+            <li><a href="#Changes">Changes</a></li>
+            <li><a href="#small-experiment-design">Small Experiment Design</a></li>
+            <li><a href="#response-table">Response Table</a></li>
+          </ul>
+        </div> -->
+        <div class="span9" id="right-column">
 <h1>
 Final Design Refinement  
 </h1>
-<h2>
+
+<h2 id="Changes"> Changes </h2>
+<h3> Visual Style </h3>
+<img src="img/FitLogIcon.png" alt="Our new visual style" width="200px">
+<p> 
+    We decided to enhance the visual design of the application by changing the color, font, and icon images.Although this does not influence functionality of the app, it does make it more visually appealing. The new colors and fonts create a more dynamic and engaging platform, while updated icons help clarify a button’s function. The new color, fonts, and icons will also contribute to a more uniform visual design, which addresses a piece of feedback we received in our heuristic evaluation.
+</p>
+<h3> Displaying Workouts </h3>
+<p>
+In our heuristic evaluation, our evaluators felt that the display and organization of the workouts was not ideal. The feedback said that the lists were too long, requiring a lot of scrolling. They also mentioned that it did not adhere to iOS guidelines, which we feel that it actually does follow. We decided not to change this. </p><p>
+
+When we first started designing, we had tested out different ways of searching for exercises. For example, we had options to search but touching parts on an image of a body
+but users never used it and were unsure of what it even was.</p><p>
+
+Personal trainers will recognize the list of workouts that the prototype provides and it won’t impact its ease of use. Furthermore, the time we invest in determining different ways to organize lists, body parts etc will be disproportionate the to value added to the application. </p>
+</p>
+<h3> Making Sure Users Receive Feedback </h3>
+<p> Most of the feedback we received in the heuristic evaluation demonstrated the fact that our prototype did not give users sufficient feedback when they submitted new information. The way users could view the workouts they added was after pressing the high-level “Done” button once they’ve added several workouts, which should not have been necessary. Per the feedback we received, we overhauled the add workout page.</p>
+<img src="img/DoneHighlighted.png" alt="The final action when adding a workout">
+<img src="img/WorkoutSummarySection.png" alt="Sample of the workout summary screen">
+<p> We added a grey divider between workouts that were already added today, and workouts that haven’t been added yet. When a workout is added, a notification appears above the workout list indicating that the workout is saved, and the workout moves above the grey divider. We’re also going to implement a text indicator within the list item for the workout, indicating how many sets were added.  </p>
+<img src="img/AddingWorkout.png" alt="Before a workout is added">
+<img src="img/WorkoutsSaved.png" alt="After a workout is added">
+<h3> Improving Consistency </h3>
+<p>In our heuristic evaluation, our evaluators have difficulty in editing workouts. When prompted to edit, they were being sent to a page with a list of workouts instead of the list of exercises already logged. We originally had a unique set of actions on this page, but decided not to implement this action in order to save time. However, in order to allow users to get through some of our tasks, we will implement this action on the workout summary screen.</p>
+
+<h2 id="small-experiment-design">
 Small Experimental Design
 </h2>
+
 <h3>
 Experiment: Saving Workouts 
 </h3>
 
 <p>
-a. Most importantly: time how long it takes the tester to add a workout.
-b. On a scale of 1-10, how confident are they their data is saved?
-c. How many times need to retype/retry, especially when searching for exercise. 
-d. Counting taps
-
+    Our experiments vary controls on the page, and for each one, we gather answers to the following four questions:
+<ol>
+<li>a. Most importantly: time how long it takes the tester to add a workout.</li>
+<li>b. On a scale of 1-10, how confident are they their data is saved?</li>
+<li>c. How many times need to retype/retry, especially when searching for exercise. </li>
+<li>d. Counting taps</li>
+</ol>
 </p>
 
 <h3>
@@ -66,23 +135,13 @@ Experimental Design
 </h3>
 
 <p>
-For our experiment, we wanted to find ways that could help improve our method 
-of recording and saving logging workouts.In our experiment design, we want to
-test the effects of having done buttons, “saved” notifications, and appearance
-of textboxes, our independent variables, on the user’s confidence and the time
-needed to complete their task all while still feeling like they had the option 
-to edit. We hypothesize that having checkboxes and text boxes while not having
-a done button or “saved” notification will produce the optimal version. We will
-see how these variations and combinations affect our response variables, how confident 
-the user feels that the data they inputted was saved and how much time it took the user
-to complete the entire task but the user should still feel like she can edit from that same screen.
-Our control will be our current combination of these x variables. Currently, we have a done button
-and textboxes and nothing else.  
+For our experiment, we wanted to find ways that could help improve our method of recording and saving logging workouts. In our experiment design, we want to test the effects of having done buttons, “saved” notifications, and appearance of textboxes on the user’s confidence and the time needed to complete their task all while still feeling like they had the option to edit. We hypothesize that having checkboxes and text boxes while not having a done button or “saved” notification will produce the optimal version. We will see how these variations and combinations affect our response variables, how confident  the user feels that the data they inputted was saved and how much time it took the user to complete the entire task but the user should still feel like she can edit from that same screen. Our control will be our current combination of these x variables. Currently, we have a done button and textboxes and nothing else.  
 
 Below, we have created a table of the responses that we expect to find in our varying our x factors
 and combinations of these x factors:
 
-<h2>Response Table</h2>
+<h2 id="response-table">Response Table</h2>
+<div>
 <table class="table">
   <thead>
     <tr><td></td><td>Done Button</td> <td>"Saved" Notification</td>  <td>Green Check Notification</td>  <td>Textboxes Around Input</td></tr>
@@ -98,27 +157,16 @@ and combinations of these x factors:
 </table>
 </div>
 
-In running our experiment, we would ideally test 10 subjects to get a data set that would point to what the average person might think. 
-Unfortunately, we do not have time in the scope of this project, so we have set up two experiments with personal trainers and plan to 
-test it a few more times with fellow students. 
-
+In running our experiment, we would ideally test 10 subjects to get a data set that would point to what the average person might think. Unfortunately, we do not have time in the scope of this project, so we have set up two experiments with personal trainers and plan to test it a few more times with fellow students. 
 </p>
+<p>
+Each subject would do five iterations of the adding, saving, and editing workouts, each time with a different random combination of the variable factors. There are 16 different variations to test, so by having them complete five, they will help us get data for most of the variations while controlling for possible individual differences. We will not ask them to do all eight because that will become too repetitive for them and would take too much of the  subject’s time. We will also give each subject variable combinations in a random order to control for possible ordering effects as well as familiarity biases.  </p>
 
 <p>
 
-Each subject would do five iterations of the adding, saving, and editing workouts, each time with a different random combination of the variable factors. 
-There are 16 different variations to test, so by having them complete five, they will help us get data for most of the variations while controlling for
-possible individual differences. We will not ask them to do all eight because that will become too repetitive for them and would take too much of the 
-subject’s time. We will also give each subject variable combinations in a random order to control for possible ordering effects as well as familiarity biases. 
+For example, Joanne would get a "done" button, and checkbox notifications on her first test, and on Robert's first test, he would get a "saved" notification, have no "done" button, and see textbox borders disappear after going to the next one. Our team has no prior experience in the design of controlled experiments, so we not only will take away useful design information from this test, but we will also apply what we learn in future experiments we may do outside of class. It will be interesting to understand how much and what types of reassurance users need in trusting that the program has saved their data inputs.  
 </p>
-
-<p>
-
-For example, Joanne would get a "done" button, and checkbox notifications on her first test, and on Robert's first test, he would get a "saved" notification, 
-have no "done" button, and see textbox borders disappear after going to the next one.
-Our team has no prior experience in the design of controlled experiments, so we not only will take away useful design information from this test, but we will also apply what we learn in future experiments we may do outside of class. It will be interesting to understand how much and what types of reassurance users need in trusting that the program has saved their data inputs. 
-
-</p>
-
+</div>
+</div>
 </body>
 </html>
