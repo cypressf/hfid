@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -41,6 +41,10 @@
     }
     img {
         float:right;
+    }
+    img.prototype-link{
+        width:200px;
+        float:none;
     }
     </style>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -98,9 +102,24 @@
             <h3>
             Reframing the Problem
             </h3>
-
+            <ul class="thumbnails">
+                <li>
+                    <div class="thumbnail">
             <img src="img/designrefinementorg.png" width="300px" alt="Story Board Scheduling">
+            <p>
+                A story board for scheduling
+                </p>
+        </div>
+            </li>
+            <li>
+                <div class="thumbnail">
             <img src="img/designrefinementclock.png" width="300px" alt="Story Board Timing">
+            <p>
+                A story board for timing
+                </p>
+        </div>
+        </li>
+            </ul>
             <p>
             Originally in our storyboard, we had focused on scheduling, since personal 
             trainers often had trouble with rescheduling and filling their days, as well 
@@ -114,15 +133,27 @@
             classic pen and paper approach, a simple and easy approach. Thus, our focus for 
             this design refinement was on the task of logging (add and editing) workouts. 
             </p>
- 
-
-
             <h3>
             Entering Numbers
             </h3>
+            <ul class="thumbnails">
+            <li>
+            <div class="thumbnail">
             <img src="img/designrefinementscrollnum.png" width="200px" alt="Number Scrolling">
+            <p>
+                Entering workouts with a scrolling control
+            </p>
+            </div>
+            </li>
+            <li>
+            <div class="thumbnail">
             <img src="img/designrefinementnumpad.png" width="200px" alt="Number Pad">
-
+            <p>
+                Entering workouts with a numeric pad
+            </p>
+            </div>
+            </li>
+            </ul>
             <p>
             With the problem reframing in mind, we knew that we had to make a fast and very 
             responsive interface. At first, we used a scroll interface to allow users to
@@ -139,9 +170,26 @@
             <h3>
             Icons and Labels
             </h3>
-
-            <img src="img/designrefinementpapericons.png" width="200px" alt="Paper Prototype Icons">
+            <ul class="thumbnails">
+            <li>
+            <div class="thumbnail">
+            <img src="img/designrefinementpapericons.png" width="300px" alt="Paper Prototype Icons">
+            <p>
+                Icons in the paper prototype
+            </p>
+            </div>
+            </li>
+            <li>
+            <div class="thumbnail">
             <img src="img/designrefinementicons.png" width="200px" alt="Balsamiq Icons">
+            <p>
+                Icons in the Balsamiq Mockup
+            </p>
+            </div>
+            </li>
+            </ul>
+            
+            
 
             <p>
             From our first round of user studies with Shannon, we redesigned our placement, 
@@ -185,8 +233,17 @@
             <h3>
             Searching and Selecting Workouts
             </h3>
-
+            <ul class="thumbnails">
+            <li>
+            <div class="thumbnail">
             <img src="img/Designrefinementbody.jpeg" alt="Paper Prototype Body Search" width="200px">
+            <p>
+                Searching for workouts by selecting body parts
+            </p>
+            </div>
+            </li>
+            </ul>
+            
 
             <p>
             The low-fidelity prototype had three ways to search and select workouts: by 
@@ -206,173 +263,25 @@
 
 
             <h2 id="cognitive-walkthrough">Cognitive Walkthrough</h2>
-
             <p>
-            As designers, it was important for us to undergo a cognitive walkthrough in order 
-            to further pinpoint improvements that would help us refine our prototype. 
-            We used the four evaluation questions that Abowd suggested  throughout our 
-            walkthrough and the user had suggestions on how to improve sections of the Add  
-            New Client  and Add Workout screens. 
-            <br>
-            While we decided that we would not focus on the adding a new client functionality, we got a lot of feedback concerning the design. 
+                For our coginitive walkthrough, we focused on the following tasks:
             </p>
-
-            <h3>
-            Add New  Client Screen: 
-            </h3>
-
-            <h4>
-            1. Will the user be trying to product whatever effect the action has?
-            </h4>
-
+            <ul>
+                <li> Adding a new client </li>
+                <li> Adding goals for a new client </li>
+                <li> Adding a workout </li>
+            </ul>
             <p>
-            Yes, the trainer would be entering in the client's information, taking a picture, 
-            entering in the goals, measurements and assessment.  However, I think it would be 
-            worth it to have a text that is transparent/graining out in order to make it more
-            apparent that there is a blank field. 
+                For the first two tasks, a lot of our feedback was relevant to the visual design of the application. The person we tested with found the lack of color intimidating, and thought the amount of white space in the app made use somewhat intimidating. The tester also recommended we change the way we give trainers feedback about the quality of the goals they enter: rather than including opinionated text, he recommended we use text highlighting (reminiscent of how Microsoft Word highlights typos). He felt the text was too opinionated, and could get in the way of a trainer.
             </p>
-
-            <h4>
-            2. Will users be able to notice that the correct action is available?
-            </h4>
-
             <p>
-            The client information is really organized and self- directing, the grouping of 
-            the name, phone and email is clear. 
-            </p>
-
-            <h4>
-            3. Once users find the correct action at the interface, will they know that it is the right one for 
-            the effect they are trying to produce
-            </h4>
-
-            <p>
-            Yes, because the information and picture populate in the empty space.  
-            </p>
-
-            <h4>
-            4. After the action is taken, will users understand the feedback they get? 
-            </h4>
-
-            <p>
-            Yes, the check marks make it clear that the trainer has finished entering in information. However,
-            the trainer might possibly be confused about the checkboxes before entering the information because 
-            he might might not know whether he should check it or if it'll automatically check itself after you
-            enter information. 
-            </p>
-
-            <h4>
-            Takeaways: 
-            </h4>
-
-            <p>
-            We realized that we could play more with interactive elements and possibly eliminate some of 
-            the white space in our design. 
-            </p>
-
-            <h3>
-            Add New  Client Goals Screen: 
-            </h3>
-
-            <h4>
-            1. Will the user be trying to product whatever effect the action has?
-            </h4>
-
-            <p>
-            Yes, the keyboard makes it clear that the trainer should start typing his clients 
-            goals. 
-            </p>
-
-            <h4>
-            2. Will users be able to notice that the correct action is available?
-            </h4>
-
-            <p>
-            Yes, because you can only type on this page or select the add Dave button to 
-            return back to the client page if you haven't finished typing in the goals.  
-            </p>
-
-            <h4>
-            3. Once users find the correct action at the interface, will they know that it is 
-            the right one for the effect they are trying to produce
-            </h4>
-
-            <p>
-            Yes, because you see your goals being typed out and the program gives you feedback
-            on how to make your goals more specific. However, instead of giving positive 
-            feedback, I think you should provide only the improving feedback. Trainers who 
-            are low on time would want to streamline efficiency when they are entering goals 
-            and may not want to waste time reading positive feedback. You could also get rid 
-            of the text feedback entirely and use a color coding system to indicate when a 
-            goal is acceptable and specific enough. 
-            </p>
-
-            <h4>
-            4. After the action is taken, will users understand the feedback they get? 
-            </h4>
-
-            <p>
-            Yes, because once you are done entering goals, the done button becomes clickable and 
-            it takes you back to the add client screen. 
-            </p>
-
-            <h4>
-            Takeaways: 
-            </h4>
-            <p>
-            We decided that we could eliminate positive feedback and that we could color 
-            acceptable goals green and use yellow to indicate that a goal needs to be more 
-            specific. 
-            </p>
-
-            <h3>
-            Add Client Workout: 
-            </h3>
-
-            <h4>
-            1. Will the user be trying to product whatever effect the action has?
-            </h4>
-
-            <p>
-            Yes, I see that you can search the workout or choose from the list of pre-populated popular workout routines. 
-            </p>
-
-            <h4>
-            2. Will users be able to notice that the correct action is available?
-            </h4>
-
-            <p>
-            Yes, the + sign next to the workout clearly indicates that if you want to add this exercise that you should click it. 
-            </p>
-
-            <h4>
-            3. Once users find the correct action at the interface, will they know that it is the right one for the effect they are trying to produce
-            </h4>
-
-            <p>
-            Yes, because you are taken to a page to add the weight,reps and sets of the exercise. 
-            </p>
-
-            <h4>
-            4. After the action is taken, will users understand the feedback they get? 
-            </h4>
-
-            <p>
-            Somewhat, visual feedback when you add an exercise with sets and reps would be helpful. I don't know whether I've entered the correct amount because there isn't any immediate feedback.
-            </p>
-
-            <h4>
-            Takeaways: 
-            </h4>
-
-            <p>
-            We realized how confusion could result if the trainer does not see an indication of how many sets he has added. So we added visual feedback, so that when a user adds or edits a workout, they can now see the number of sets, reps and corresponding exercises they added on the same screen. 
+                We feel the most critical feedback we received was around the third task we included in the walkthrough: adding a workout. The tester felt that the system gave him absolutely no feedback when he added a workout. This caused the tester to try to enter the same workout multiple times, and was an obvious violation of standard usability guidelines. In response to this feedback, we implemented several feedback mechanisms that immediately inform a trainer that their information is saved, and clue the trainer about what was added.
             </p>
 
             <h2 id="manual">
             Personal Trainer Initial Prototype Manual
             </h2>
-
+            <div class="manual-inset">
             <p>
             Our goal was to redesign the method that personal trainers use to log their 
             client's workouts. In designing our prototype, we wanted an interface that would 
@@ -383,9 +292,9 @@
             trainer might have and use to aid them in their occupation. 
             </p>
 
-            <h2>
+            <h3>
             Let's Get Started!
-            </h2>
+            </h3>
             <p>
             To get started, tap the profile image of the client you wish to view on the 
             homepage. Search for the client by scrolling down the page until you can see the 
@@ -395,9 +304,9 @@
             information originally imputed in the core client profile.
             </p>
 
-            <h2>
+            <h3>
             Add a Workout
-            </h2>
+            </h3>
             <p>
             After selecting the client profile for whom you wish to add a workout for, tap the
             clipboard icon with the label "workout". On this page, there is a search bar at
@@ -412,34 +321,35 @@
             of the corresponding information. 
             </p>
 
-            <h2>
+            <h3>
             Edit Workout
-            </h2>
+            </h3>
 
             <p>
             In order to change the details of a workout that has already been added, you must go to the workout
             summary page first by tapping  the "workout" clipboard icon on the bottom of the screen. Click the "Edit/Pencil" button on the right hand side of the specific exercise that you wish to edit. Using the same interface and format from when you originally entered the data, select the correct numbers on the numerical keyboard. Complete this task by selecting the "done" button. 
             </p>
 
-            <h2>
+            <h3>
             View Workout History
-            </h2>
+            </h3>
 
             <p>
             To browse through all past workouts for a specific client, you simply click on the profile of the client that you want to view the history for. Once in the specific client's profile, select the "add a workout" link or the "work out" icon on the bottom of the screen. A list of all past workouts will be displayed. You can scroll through the workouts to see previous dates.
             </p>
 
-            <h2>
+            <h3>
             View Client Progress
-            </h2>
+            </h3>
 
             <p>
             To see how the client's workout progress relates to their goals, you can view a graphical visualization of how the client has done over time. After selecting the client from the client home screen, tap "add a workout". In this screen, click the graph icon labeled "Progress" at the bottom right of the screen. This pulls up the charts onto the screen.
             </p>
+        </div>
 
             <h2>Prototyping:</h2>
 
-            <li> <a href="https://olin.mybalsamiq.com/projects/soulpatch/grid"> Balsamiq Prototype</a></li>
+            <a href="https://olin.mybalsamiq.com/projects/soulpatch/grid"> <h5>Go to our prototype</h5><img class="prototype-link" src="img/balsamiq_front_page.png" alt="Go to our Balsamiq prototype"></a>
             
             <h2 id="he">Heuristic Evaluation</h2>
             <iframe src="https://docs.google.com/file/d/0B44sGQjIRaMZLVl2djNsNGJzekE/preview" width="100%" height="480" frameborder="0"></iframe>
