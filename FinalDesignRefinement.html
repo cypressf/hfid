@@ -1,172 +1,906 @@
-﻿
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Team Soul Patch Small Experimental Design</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website for Human Factors and Interface Design project, making software for Personal Trainers">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-    body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    }
-     .sidenav ul{
-      position:fixed;
-    }
-    .sidenav li.active a, .sidenav li a:active, .sidenav li.active a:hover{
-      background:#0a71c8;
-      color:#fff;
-    }
-    h2 {
-      padding-top:1.5em;
-    }
-    span.comment {
-      background:#797880;
-      color:#eee;
-      border:1px solid #b5b3bf;
-      max-width:80%;
-      display:block;
-      padding:1em;
-      margin:1em auto;
-    }
-    .aside {
-      float:right;
-    }
-    @media (max-width: 767px) {
-      .sidenav ul{
-        position:static;
-      }
-    }
-    img {
-
-        width:300px;
-    }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-        <a class="brand" href="index.html">Soul Patch</a>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li ><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
-            <li><a href="personas.html">Personas</a></li>
-            <li><a href="needs_analysis.html">Needs Analysis</a></li>
-            <li><a href="interview.html">User Study</a></li>
-            <li><a href="prototype2.html">Prototype</a></li>
-            <li><a href="DesignRefinement.html">Design Refinement</a></li>
-	    <li class="active"><a href="FinalDesignRefinement.html">Final Design Refinement</a>
-        </ul>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Team Soul Patch Small Experimental Design
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website for Human Factors and Interface Design project, making software for Personal Trainers">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            body { padding-top: 60px; padding-bottom: 40px; padding-left: 20px; }
+            .sidenav ul{ position:fixed; } .sidenav li.active a, .sidenav li a:active,
+            .sidenav li.active a:hover{ background:#0a71c8; color:#fff; } h2 { padding-top:1.5em;
+            } span.comment { background:#797880; color:#eee; border:1px solid #b5b3bf;
+            max-width:80%; display:block; padding:1em; margin:1em auto; } .aside {
+            float:right; } @media (max-width: 767px) { .sidenav ul{ position:static;
+            } figure img {max-width:200px;} } img { width:300px; } table td{ font-size:14px;
+            } figure {margin:0;}
+        </style>
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js">
+                                                                                                                        
+            </script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="index.html">Soul Patch</a>
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="inspirationaldesigns.html">Inspirational Designs</a>
+                        </li>
+                        <li>
+                            <a href="personas.html">Personas</a>
+                        </li>
+                        <li>
+                            <a href="needs_analysis.html">Needs Analysis</a>
+                        </li>
+                        <li>
+                            <a href="interview.html">User Study</a>
+                        </li>
+                        <li>
+                            <a href="prototype2.html">Prototype</a>
+                        </li>
+                        <li>
+                            <a href="DesignRefinement.html">Design Refinement</a>
+                        </li>
+                        <li class="active">
+                            <a href="FinalDesignRefinement.html">Final Design Refinement</a>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<body>
-    <div class="container">
-<!--         <div class="span3 sidenav">
-          <ul class="nav nav-tabs nav-stacked">
-            <li><a href="#Changes">Changes</a></li>
-            <li><a href="#small-experiment-design">Small Experiment Design</a></li>
-            <li><a href="#response-table">Response Table</a></li>
-          </ul>
-        </div> -->
-        <div class="span9" id="right-column">
-<h1>
-Final Design Refinement  
-</h1>
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidenav">
+                    <ul class="nav nav-tabs nav-stacked">
+                        <li>
+                            <a href="#changes">Heuristic Eval Changes</a>
+                        </li>
+                        <li>
+                            <a href="#experiment-design">Experiment Design</a>
+                        </li>
+                        <li>
+                            <a href="#testing">Usability Testing</a>
+                        </li>
+                        <li>
+                            <a href="#work-distribution">Work distribution</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span9" id="right-column">
+                    <h1>
+                        Final Design Refinement
+                    </h1>
+                    <article id="changes">
+                        <h2>
+                            Response to Heuristic Evaluation
+                        </h2>
+                        <div class="row">
+                            <div class="span4">
+                                <h3>
+                                    Visual Style
+                                </h3>
+                                <p>
+                                    <img src="img/FitLogIcon.png" alt="Our new visual style" class="img-polaroid"
+                                    style="float:right; width:170px;margin-left:1em">
+                                    We decided to enhance the visual design of the application by changing
+                                    the color, font, and icon images. The new colors and fonts make the app
+                                    more engaging, while updated icons help clarify a button’s function. The
+                                    new visual design will also contribute to a more uniform visual design,
+                                    which addresses a piece of feedback we received in our heuristic evaluation.
+                                    We didn't have time to implement the visual design in our prototype&mdash;instead
+                                    we made photoshop mockups.
+                                </p>
+                            </div>
+                            <div class="span5">
+                                <h3>
+                                    Displaying Workouts
+                                </h3>
+                                <p>
+                                    Our evaluators felt that the display and organization of the workouts
+                                    was not ideal, saying the lists were too long, which requiring a lot of
+                                    scrolling. They recommended adding a way to organize the workouts by type.
+                                    We decided not to change this because we believe our design works well
+                                    for personal trainers.
+                                </p>
+                                <p>
+                                    When we first started designing, we tested out different ways of searching
+                                    for exercises. For example, we had options to search by tapping on an image
+                                    of a body, but we found in our tests that it took up too much space, added
+                                    too much clutter, and that everyone always went straight to the search
+                                    bar anyway. Personal trainers, in particular, know the exact names for
+                                    their workouts, and don't need to filter by "workout type" because it is
+                                    much faster for them to start typing the workout name.
+                                </p>
+                                <p>
+                                    Thus, the time we invest in determining different ways to organize lists,
+                                    body parts etc, will be disproportionate the to value added to the application.
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                        <h3>
+                            Making Sure Users Receive Feedback
+                        </h3>
+                        <div class="row">
+                            <div class="span4">
+                                <h4>
+                                    Problem
+                                </h4>
+                                <p>
+                                    <img src="img/DoneHighlighted.png" style="width:190px;float:right" class="img-polaroid"
+                                    alt="The final action when adding a workout">
+                                    <img src="img/WorkoutSummarySection.png" style="width:190px;float:right"
+                                    class="img-polaroid" alt="Sample of the workout summary screen">
+                                    When the evaluators added a workout, they were surprised that the app
+                                    didn't give them any immediate feedback that the workout had been added.
+                                    The workout would simply appear as a list item as it did before they added
+                                    it. In order to see what workouts had been added, it was necessary to click
+                                    the "done" button. Only once they did this, could they see the details
+                                    of what they had added.
+                                </p>
+                            </div>
+                            <div class="span5">
+                                <h4>
+                                    Solution
+                                </h4>
+                                <img src="img/feedback_paper.png" class="img-polaroid" style="width:200px;float:right;">
+                                <p>
+                                    We had already designed a feedback system in our paper prototype, but
+                                    hadn't implemented it in our functional prototype yet. When a trainer adds
+                                    a workout, it floats to the top of the list, and grey text appears underneath
+                                    the workout, indicating how many sets have been added. The workouts that
+                                    have been added, and the workouts that the trainer most often uses, appear
+                                    seperated from the entire workout list by a thick grey divider.
+                                </p>
+                            </div>
+                        </div>
+                        <h4>
+                            We implemented this design (and more) in our functional prototype
+                        </h4>
+                        <div class="row">
+                            <div class="span3">
+                                <figure>
+                                    <img src="img/adding_workout.png" alt="Before a workout is added">
+                                    <figcaption>
+                                        <p>
+                                            A trainer starts to add a workout
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="span3">
+                                <figure>
+                                    <img src="img/added_workout.png" alt="After a workout is added">
+                                    <figcaption>
+                                        <p>
+                                            The workout autosaves and floats to the top of the list.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="span3">
+                                <figure>
+                                    <img src="img/added_workout_collapsed.png" alt="After a workout is added">
+                                    <figcaption>
+                                        <p>
+                                            Even when collapsed, the workout gives clear feedback that it has been
+                                            added.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <h3>
+                            Improving Consistency
+                        </h3>
+                        <div class="row">
+                            <div class="span4">
+                                <h4>
+                                    Problem
+                                </h4>
+                                <p>
+                                    Our evaluators have difficulty in editing workouts. When thet clicked
+                                    edit, they were being sent to a page with a list of
+                                    <em>
+                                        all
+                                    </em>
+                                    workouts instead of the list of exercises already logged.
+                                </p>
+                            </div>
+                            <div class="span5">
+                                <h4>
+                                    Solution
+                                </h4>
+                                <p>
+                                    <img src="img/edit_workouts_paper.png" style="width:200px; float:right;">
+                                    Again, we had already implemented a solution to this in our paper prototype,
+                                    but hadn't yet had the time to implement it in our functional prototype.
+                                    In our paper prototype, when someone clicks "edit," they are presented
+                                    with the option to tap on a pencil icon next to each workout to edit it,
+                                    or tap on the minus icon to delete it.
+                                </p>
+                            </div>
+                        </div>
+                        <h4>
+                            We implemented this in our final prototype
+                        </h4>
+                        <div class="row">
+                            <div class="span3">
+                                <figure>
+                                    <img src="img/workouts_list.png">
+                                    <figcaption>
+                                        <p>
+                                            The list of workouts.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="span3">
+                                <figure>
+                                    <img src="img/edit_workouts.png">
+                                    <figcaption>
+                                        <p>
+                                            When the trainer clicks "edit"
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="span3">
+                                <figure>
+                                    <img src="img/edit_workouts_expanded.png">
+                                    <figcaption>
+                                        <p>
+                                            The trainer may expand any workout to edit.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="experiment-design">
+                        <h2>
+                            Experiment Design
+                        </h2>
+                        <h3>
+                            Overview
+                        </h3>
+                        <p>
+                            We wanted to improve the flow of saving workouts. In our experiment design,
+                            we want to test the effects of having done buttons, “saved” notifications,
+                            and appearance of textboxes on the user’s confidence and the time needed
+                            to complete their task.
+                            <ol>
+                                <li>
+                                    Most importantly: time how long it takes the tester to add a workout.
+                                </li>
+                                <li>
+                                    On a scale of 1-10, how confident are they their data is saved?
+                                </li>
+                                <li>
+                                    How many times need to retype/retry, especially when searching for exercise.
+                                </li>
+                                <li>
+                                    Counting taps
+                                </li>
+                            </ol>
+                        </p>
+                        <h3>
+                            Done button
+                        </h3>
+                        <p>
+                            Our workouts autosave, but we wanted to test the effects of having explicit
+                            &quot;done&quot; buttons, because we were concerned that people wouldn&#39;t
+                            realize that their workouts were being saved, without clicking a &quot;done&quot;
+                            or a &quot;save&quot; button.
+                        </p>
+                        <p>
+                            We tested the form with a done button. And the same form without it.
+                        </p>
+                        <p>
+                            <img height="165" src="img/done_button.png" width="321">
+                            <img height="124" src="img/no_done_button.png" width="321">
+                        </p>
+                        <h3>
+                            &quot;Workouts saved&quot; banner notifications
+                        </h3>
+                        <p>
+                            Upon saving the workout, we also gave the user feedback by displaying
+                            a green &quot;workouts saved&quot; notification at the top of the screen
+                            for 1 second. We observed how confident users were that their workouts
+                            had been saved, with, and without this notification.
+                        </p>
+                        <p>
+                            <img height="157" src="img/workouts_saved.png" width="320">
+                        </p>
+                        <h3>
+                            Check mark notifications
+                        </h3>
+                        <p>
+                            We wanted to tell personal trainers that it was autosaving without getting
+                            in their face and distracting them. We tried placing small, green check
+                            marks next to the workout as it was saved, as opposed to displaying a large
+                            green banner.
+                        </p>
+                        <p>
+                            <img height="80" src="img/spinning_icon.png" width="314">
+                            <img height="74" src="img/check_mark.png" width="306">
+                        </p>
+                        <h3>
+                            Response variables
+                        </h3>
+                        <ol>
+                            <li>
+                                Total time to save a workout
+                            </li>
+                            <li>
+                                On a scale of 1-10, how confident are they their data is saved?
+                            </li>
+                            <li>
+                                How many times need to retype/retry, especially when searching for exercise.
+                            </li>
+                            <li>
+                                Counting taps
+                            </li>
+                        </ol>
+                        <h3>
+                            Hypothesis
+                        </h3>
+                        <p>
+                            We hypothesized that having check marks appear when each individual set
+                            is saved, and not having a done button or “saved” notification banner will
+                            produce the optimal version. We will see how these variations and combinations
+                            affect our response variables.
+                        </p>
+                        <p>
+                            We created a table of the responses that we expect to find for all combinations
+                            of our variables
+                        </p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Done Button
+                                    </td>
+                                    <td>
+                                        "Saved" Notification
+                                    </td>
+                                    <td>
+                                        Green Check Notification
+                                    </td>
+                                    <td>
+                                        Border Around Input
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        confident that saved bc actively said to save, take a longer time because
+                                        added tasks of tapping “done”. not sure how to edit because textboxes gone
+                                    </td>
+                                    <td>
+                                        confident because told so, long time because it pauses you before continuing
+                                        on to next task. not sure how to edit because textboxes gone
+                                    </td>
+                                    <td>
+                                        confident saved because told so for each item. no extra time bc no extra
+                                        steps not sure how to edit because textboxes gone
+                                    </td>
+                                    <td>
+                                        unsure if saved because looks like can still edit, short time because
+                                        no extra steps just uncertainty. sure can edit because textboxes are still
+                                        there
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Done
+                                    </td>
+                                    <td>
+                                        X
+                                    </td>
+                                    <td>
+                                        super confident that saved, annoyed, and long time because 2 extra steps
+                                    </td>
+                                    <td>
+                                        confident saved because told so for each item and had to actively save.
+                                        added tasks of tapping “done”. not sure how to edit because textboxes gone
+                                    </td>
+                                    <td>
+                                        fairly confident that saved bc actively said to save but not completely
+                                        confident because textboxes still apparent, a bit long because some doubt
+                                        so move slower and then extra step of saying done
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Notification
+                                    </td>
+                                    <td>
+                                        very confident because told so and actively had to do it and textboxes
+                                        disappear. take a longer time because added
+                                    </td>
+                                    <td>
+                                        X
+                                    </td>
+                                    <td>
+                                        confident because told so, long time because it pauses you before continuing
+                                        on to next task. not sure how to edit because textboxes
+                                    </td>
+                                    <td>
+                                        fairly confident because told so but unsure because looks like can still
+                                        edit, long time because it pauses you before continuing on to next task
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Green Check
+                                    </td>
+                                    <td>
+                                        very confident because told so and actively had to do it and textboxes
+                                        disappear. longer time because added tasks of tapping “done”
+                                    </td>
+                                    <td>
+                                        X
+                                    </td>
+                                    <td>
+                                        X
+                                    </td>
+                                    <td>
+                                        confident saved because told so for each item. no extra time bc no extra
+                                        steps.sure can edit because textboxes are still there
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Combo of Three
+                                    </td>
+                                    <td>
+                                        notification+green+text sure saved because extra pop up said so and green
+                                        check next to each one. and can edit because of box
+                                    </td>
+                                    <td>
+                                        done +green+text confident saved because told so for each item. can edit.
+                                        extra time because of extra button
+                                    </td>
+                                    <td>
+                                        done+notification+green extra time because of extra button and pop up.
+                                        confident saved bc multiple indicators. not sure if can edit bc no box
+                                    </td>
+                                    <td>
+                                        done+notification+text confident can edit. sure saved because extra steps
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        All Four
+                                    </td>
+                                    <td>
+                                        confident because actively said done and got a notification but maybe
+                                        some doubt because textboxes indicated can still edit but not really because
+                                        the green checks will say that it is saved. very long time because multiple
+                                        extra steps
+                                    </td>
+                                    <td>
+                                        done +green+text confident saved because told so for each item. can edit.
+                                        extra time because of extra button
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            In running our experiment, we would ideally test 10 subjects to get a
+                            data set that would point to what the average person might think. Unfortunately,
+                            we do not have time in the scope of this project, so we have set up two
+                            experiments with personal trainers and plan to test it a few more times
+                            with fellow students.
+                        </p>
+                        <p>
+                            Each subject would do five iterations of the adding, saving, and editing
+                            workouts, each time with a different random combination of the variable
+                            factors. There are 16 different variations to test, so by having them complete
+                            five, they will help us get data for most of the variations while controlling
+                            for possible individual differences. We will not ask them to do all eight
+                            because that will become too repetitive for them and would take too much
+                            of the subject’s time. We will also give each subject variable combinations
+                            in a random order to control for possible ordering effects as well as familiarity
+                            biases.
+                        </p>
+                        <p>
+                            For example, Joanne would get a "done" button, and checkbox notifications
+                            on her first test, and on Robert's first test, he would get a "saved" notification,
+                            have no "done" button, and see textbox borders disappear after going to
+                            the next one. Our team has no prior experience in the design of controlled
+                            experiments, so we not only will take away useful design information from
+                            this test, but we will also apply what we learn in future experiments we
+                            may do outside of class. It will be interesting to understand how much
+                            and what types of reassurance users need in trusting that the program has
+                            saved their data inputs.
+                        </p>
+                    </article>
+                    <article id="testing">
+                        <h2>
+                            Usability Testing
+                        </h2>
+                        <p>
+                            We didn't alter the border around the input field, due to time constraints,
+                            but we tested our other three variables.
+                        </p>
+                        <ol>
+                            <li>
+                                Done button
+                            </li>
+                            <li>
+                                &quot;Workouts saved&quot; notification
+                            </li>
+                            <li>
+                                Green check mark notification
+                            </li>
+                        </ol>
+                        <h3>
+                            What we learned
+                        </h3>
+                        <p>
+                            We conducted three formal usability experiments: one with a personal trainer
+                            and two with Olin students. We also conducted two informal usability tests.
+                            Although we had a small sample size, we believe that our validity remains
+                            strong. We learned the following:
+                        </p>
+                        <ol class="c11">
+                            <li>
+                                Feedback on saving is important.
+                            </li>
+                            <li>
+                                Need minimal amount of “done buttons” because too many are annoying and
+                                confusing but need just enough so users know how to finish.
+                            </li>
+                            <li>
+                                When nesting “done” buttons for actions within actions on a page, need
+                                to make it clear which one refers to which action.
+                            </li>
+                            <li>
+                                The green check mark icon can easily be confused with a button if it is
+                                styled too similarly to the delete button.
+                            </li>
+                        </ol>
+                        <h3>
+                            Interviews
+                        </h3>
+                        <p>
+                            A raw representation of the data and insights we collected.
+                        </p>
+                        <p class="well">
+                            Scenario: Your client just did some buns-up leg presses. He did three
+                            sets; the first set, he did 10 reps at 120 lbs. The second set was the
+                            same. The third set, he did 8 reps at 120lbs. Can you please log his workouts?
+                        </p>
+                        <h4>
+                            Krista Jameson: A personal trainer at a local gym who is not a regular
+                            iPhone user
+                        </h4>
+                        <div class="row">
+                            <div class="span4">
+                                <h5>
+                                    Trial 1: No done button, green check marks, no &quot;workouts saved&quot;
+                                    notification
+                                </h5>
+                                <p>
+                                    Task completion time: 43 sec.
+                                </p>
+                                <p>
+                                    Confidence that workouts were saved: low.
+                                </p>
+                                <p>
+                                    Notes:
+                                </p>
+                                <p>
+                                    Despite not being a regular iPhone user, Krista immediately starts to
+                                    enter the information and asks “wouldn’t it be easy if you guys had a duplicate
+                                    button so trainers don’t have to repetitively add the same information?”
+                                    We ask her if it feels like her information is saved and she responds,
+                                    “ It doesn’t feel like the information that i entered had been recorded
+                                    before I press the done button”. Without the done button, she feels like
+                                    she hasn’t saved any of the inputted exercises.
+                                </p>
+                            </div>
+                            <div class="span4 offset1">
+                                <h5>
+                                    Trial 2: Done button, check marks, and &quot;workouts saved&quot; notification
+                                </h5>
+                                <p>
+                                    Task completion time: 27 sec.
+                                </p>
+                                <p>
+                                    Confidence that workouts were saved: high
+                                </p>
+                                <p>
+                                    Notes:
+                                </p>
+                                <p>
+                                    Upon completion of the task, Krista notes that she likes the confirmation
+                                    better because it makes her feel like her client information has been stored.
+                                    She tried to add a set but the buttons were too close, so there were some
+                                    mishaps there.
+                                </p>
+                            </div>
+                        </div>
+                        <h4>
+                            James Huang: A college student
+                        </h4>
+                        <div class="row">
+                            <div class="span4">
+                                <h5>
+                                    Trial 1: no done button, “saved” notification, no green check notification
+                                </h5>
+                                <p>
+                                    Task Completion Time: 35.8s
+                                </p>
+                                <p>
+                                    Notes:
+                                </p>
+                                <p>
+                                    After inputting the first two tasks, James moves onto the third set and
+                                    notes that he sees a done button. As such, he is going to go ahead and
+                                    click on it and is satisfied that it takes him to the client workouts,
+                                    which is exactly what he anticipated and wanted. When asked if he felt
+                                    like the data was saved, he says “No, there is not enough of a feedback
+                                    to tell me that it is saved.”
+                                </p>
+                                <p>
+                                    When asked what he expected to see upon clicking the done button he responds,
+                                    “I expect to see a quick popup that tells me my client data is saved.”
+                                    He also mentions that he thinks the layout is good he doesn’t need to look
+                                    anywhere else in order to add a workout for a person because the layout
+                                    tells him which buttons to press.
+                                </p>
+                            </div>
+                            <div class="span4 offset1">
+                                <h5>
+                                    Trial 2: done button, “saved” notification, green check notification:
+                                </h5>
+                                <p>
+                                    Task Completion Time: 19.3s
+                                </p>
+                                <p>
+                                    Notes:
+                                </p>
+                                <p>
+                                    With the addition of a second done button, James says that out of the
+                                    two done buttons that he sees, he is going to click on the one underneath
+                                    the rep/set buttons. He also mentions that it is very clear that the data
+                                    is saved and that he can now add more workouts without having to go to
+                                    the review page.
+                                </p>
+                                <p>
+                                    He suggests that we might want to change the done button underneath the
+                                    set/lbs buttons or change the diction on the button because having two
+                                    done buttons is confusing.
+                                </p>
+                            </div>
+                            <div class="span4 offset5">
+                                <h5>
+                                    Trial 3: done button, “saved” notification, no green check notification:
+                                </h5>
+                                <p>
+                                    Task Completion Time: 17.0s
+                                </p>
+                                <p>
+                                    Notes:
+                                </p>
+                                <p>
+                                    After completing the tasks, he notes that he did not notice any big difference
+                                    from the previous layout besides the absence of check marks. He states
+                                    that he does not have a layout preference when it comes to check marks.
+                                </p>
+                            </div>
+                        </div>
+                        <h4>
+                            Ryan Powell: A college student
+                        </h4>
+                        <p>
+                            We did not record times on this interview.
+                        </p>
+                        <h5>
+                            Problem with the spinner
+                        </h5>
+                        <div class="row">
+                            <p class="span">
+                                <img src="img/spinning_icon.png" style="float:left;">
+                                Ryan was initially confused by the spinning icon that appeared next to
+                                a workout set while he was typing. He had started typing in the &quot;minutes&quot;
+                                field, and the spinning icon appeared.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="span">
+                                <img src="img/check_mark.png" style="float:left;">
+                                This icon indicates that the app is trying to save the workout. Usually,
+                                it disappears quickly, and is replaced by a check mark, if the workout
+                                form has been filled out completely. This is intended to keep the trainer
+                                informed of the app&#39;s internal state. If it weren&#39;t transparent,
+                                and didn&#39;t show a spinning icon when it is in the process of saving,
+                                then the trainer using it could be confused about whether or not the app
+                                is actually doing anything, and could navigate away from the page before
+                                the green checkmark appears.
+                            </p>
+                        </div>
+                        <p>
+                            Mistakenly, we made the spinning icon appear while the form was not completely
+                            filled out (e.g., Ryan had only begun typing in the minutes field). This
+                            made Ryan feel as if he could not go on to the &quot;miles&quot; field,
+                            until the spinner stopped spinning. He was afraid that minutes would not
+                            be saved.
+                        </p>
+                        <p>
+                            Our spinner distracted him, making him think that the app was &quot;busy&quot;
+                            and that he could take no further action. We fixed this issue by making
+                            the spinning icon only appear briefly, representing that the app noticed
+                            that he started typing, and briefly to save the form, but didn&#39;t.
+                        </p>
+                        <h5>
+                            Confusion with workout headers
+                        </h5>
+                        <p>
+                            When a workout is added, we make it appear at the top of the workouts
+                            list, so that the trainer can see that it has been added. We also separate
+                            it visually from the other workouts by a thick divider line. In our paper
+                            prototype, we also wrote under the workout &quot;[x] sets logged&quot;
+                            to indicate that the trainer had added something.
+                        </p>
+                        <div class="row">
+                            <figure class="span3">
+                                <img src="img/workouts_divider_paper.png">
+                                <figcaption>
+                                    Paper Prototype
+                                </figcaption>
+                            </figure>
+                            <figure class="span3">
+                                <img src="img/workouts_divider_a.png">
+                                <figcaption>
+                                    Version A
+                                </figcaption>
+                            </figure>
+                            <figure class="span3">
+                                <img src="img/workouts_divider_b.png">
+                                <figcaption>
+                                    Version B
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <p>
+                            We used a prototype with Ryan that had a divider line (indicating that
+                            &quot;Buns-Up Leg Press and &quot;Abdominal Crunch&quot; had been added),
+                            as opposed to the workouts below the line, which hadn&#39;t been added.
+                        </p>
+                        <p>
+                            Ryan was confused as to what the line meant, and sometimes didn&#39;t
+                            notice that the workouts had even moved (for example, when the workout
+                            was already near the top of the list). Based on this feedback, we modified
+                            the interface to make it more clear which workouts had been added.
+                        </p>
+                        <ol>
+                            <li>
+                                We added two headers, Today&#39;s Workouts , and More Workouts to the
+                                list.
+                            </li>
+                            <li>
+                                As the trainer adds workouts, they move up to the Today&#39;s Workouts
+                                list.
+                            </li>
+                            <li>
+                                We added grey text next to workouts indicating what had been added (e.g.
+                                &quot;1 set&quot;). This text was in our original paper prototype as well.
+                            </li>
+                        </ol>
+                        <p>
+                            Now it is much more clear when a workout has been added, and the trainer
+                            can easily see the state of their workout list, and see, at a glance, which
+                            workouts they have already added.
+                        </p>
+                        <h5>
+                            &quot;Workouts Saved&quot; Notification
+                        </h5>
+                        <p>
+                          <img  src="img/workouts_saved.png"  style="float:right;margin-left:1em">
 
-<h2 id="Changes"> Changes </h2>
-<h3> Visual Style </h3>
-<img src="img/FitLogIcon.png" alt="Our new visual style" width="200px">
-<p> 
-    We decided to enhance the visual design of the application by changing the color, font, and icon images.Although this does not influence functionality of the app, it does make it more visually appealing. The new colors and fonts create a more dynamic and engaging platform, while updated icons help clarify a button’s function. The new color, fonts, and icons will also contribute to a more uniform visual design, which addresses a piece of feedback we received in our heuristic evaluation.
-</p>
-<h3> Displaying Workouts </h3>
-<p>
-In our heuristic evaluation, our evaluators felt that the display and organization of the workouts was not ideal. The feedback said that the lists were too long, requiring a lot of scrolling. They also mentioned that it did not adhere to iOS guidelines, which we feel that it actually does follow. We decided not to change this. </p><p>
+                            Ryan thought the &quot;Workouts Saved&quot; notification that appeared
+                            at the top of the screen was worrisome because it only appeared for a second,
+                            it slid in and out like an &quot;alert&quot; and he didn&#39;t get a chance
+                            to read it. He felt that he had possibly missed an &quot;error message.&quot;
+                        </p>
 
-When we first started designing, we had tested out different ways of searching for exercises. For example, we had options to search but touching parts on an image of a body
-but users never used it and were unsure of what it even was.</p><p>
+                        <p>
+                            Ryan preferred the workouts form without a done button , with checkmarks
+                            , and without &quot;saved&quot; notifications . &quot;why would you have
+                            a done button if it saves automatically as I type?&quot;
+                        </p>
+                        <h4>
+                            Betty Lee and Tim Valencia: college students
+                        </h4>
+                        <p>
+                            In two separate informal user tests with Betty and Tim, they both initially
+                            thought the check marks were a &quot;confirmation button&quot; to click
+                            on, and tried tapping on it. Understandably so! The check mark is shaped
+                            similarly to the &quot;delete&quot; button in our original design.
+                        </p>
+                        <p>
+                            We adapted the check mark to look more like an unclickable notification,
+                            and less like a button. Hopefully this will result in less confusion in
+                            the future.
+                        </p>
+                        <p>
+                            <img height="125" src="img/check_mark_old.png" width="319">
+                            <img height="125" src="img/check_mark_new.png" width="321">
+                        </p>
+                        <h3>
+                            If we had more time
+                        </h3>
+                        <p>
+                            We would perform more tests, be more thorough when recording times, and
+                            try modifying the green notification banner. It seemed to help, but also
+                            was distracting, and in one case, worrisome for the user. It&#39;s possible
+                            that we could display this confirmation next to the name of the workout,
+                            similar to the grey text. We could use this in with, or without green check
+                            marks, and see if there is a significant difference.
+                        </p>
+                        <p>
+                            <img height="174" src="img/saving_future.png" width="318">
+                            <img height="176" src="img/saved_future.png" width="317">
+                        </p>
+                        <p>
+                            We would also test out duplicating a workout when the trainer enters a
+                            new set, and see if that improves efficiency of entering workouts.
+                        </p>
+                    </article>
+                    <article id="work-distribution">
+                        <h2>
+                            Work distribution
+                        </h2>
+                        <table class="table">
+                          <thead>
+                        <tr><td></td><td>Cypress</td>
+                          <td>Dana</td>
+                        <td>Noam</td>
+                         <td>Sharon</td></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Website</td><td>45</td><td>0</td><td>40</td><td>5</td></tr>
+                        <tr><td>Experimental Design</td>
+                          <td>25</td>
+                        <td>25</td>
+                        <td>25</td>
+                        <td>25</td></tr>
+                        <tr><td>Presentation</td><td>25</td><td>25</td><td>25</td><td>25</td></tr>
+                        <tr><td>Prototype Redesign</td><td>30</td><td>20</td><td>30</td><td>20</td></tr>
+                        <tr><td>Prototype Code</td><td>50</td><td>0</td><td>50</td><td>0</td></tr>
+                        <tr><td>Interviews</td><td>30</td><td>20</td><td>30</td><td>20</td></tr>
+                      </tbody>
+                      </table>
 
-Personal trainers will recognize the list of workouts that the prototype provides and it won’t impact its ease of use. Furthermore, the time we invest in determining different ways to organize lists, body parts etc will be disproportionate the to value added to the application. </p>
-</p>
-<h3> Making Sure Users Receive Feedback </h3>
-<p> Most of the feedback we received in the heuristic evaluation demonstrated the fact that our prototype did not give users sufficient feedback when they submitted new information. The way users could view the workouts they added was after pressing the high-level “Done” button once they’ve added several workouts, which should not have been necessary. Per the feedback we received, we overhauled the add workout page.</p>
-<img src="img/DoneHighlighted.png" alt="The final action when adding a workout">
-<img src="img/WorkoutSummarySection.png" alt="Sample of the workout summary screen">
-<p> We added a grey divider between workouts that were already added today, and workouts that haven’t been added yet. When a workout is added, a notification appears above the workout list indicating that the workout is saved, and the workout moves above the grey divider. We’re also going to implement a text indicator within the list item for the workout, indicating how many sets were added.  </p>
-<img src="img/AddingWorkout.png" alt="Before a workout is added">
-<img src="img/WorkoutsSaved.png" alt="After a workout is added">
-<h3> Improving Consistency </h3>
-<p>In our heuristic evaluation, our evaluators have difficulty in editing workouts. When prompted to edit, they were being sent to a page with a list of workouts instead of the list of exercises already logged. We originally had a unique set of actions on this page, but decided not to implement this action in order to save time. However, in order to allow users to get through some of our tasks, we will implement this action on the workout summary screen.</p>
+                    </article>
+                </div>
+            </div>
+            <!-- container -->
+    </body>
 
-<h2 id="small-experiment-design">
-Small Experimental Design
-</h2>
-
-<h3>
-Experiment: Saving Workouts 
-</h3>
-
-<p>
-    Our experiments vary controls on the page, and for each one, we gather answers to the following four questions:
-<ol>
-<li>a. Most importantly: time how long it takes the tester to add a workout.</li>
-<li>b. On a scale of 1-10, how confident are they their data is saved?</li>
-<li>c. How many times need to retype/retry, especially when searching for exercise. </li>
-<li>d. Counting taps</li>
-</ol>
-</p>
-
-<h3>
-Experimental Design
-</h3>
-
-<p>
-For our experiment, we wanted to find ways that could help improve our method of recording and saving logging workouts. In our experiment design, we want to test the effects of having done buttons, “saved” notifications, and appearance of textboxes on the user’s confidence and the time needed to complete their task all while still feeling like they had the option to edit. We hypothesize that having checkboxes and text boxes while not having a done button or “saved” notification will produce the optimal version. We will see how these variations and combinations affect our response variables, how confident  the user feels that the data they inputted was saved and how much time it took the user to complete the entire task but the user should still feel like she can edit from that same screen. Our control will be our current combination of these x variables. Currently, we have a done button and textboxes and nothing else.  
-
-Below, we have created a table of the responses that we expect to find in our varying our x factors
-and combinations of these x factors:
-
-<h2 id="response-table">Response Table</h2>
-<div>
-<table class="table">
-  <thead>
-    <tr><td></td><td>Done Button</td> <td>"Saved" Notification</td>  <td>Green Check Notification</td>  <td>Textboxes Around Input</td></tr>
-  </thead>
-  <tbody>
- <tr> <td></td>  <td>confident that saved bc actively said to save, take a longer time because added tasks of tapping “done”. not sure how to edit because textboxes gone</td>  <td>confident because told so, long time because it pauses you before continuing on to next task. not sure how to edit because textboxes gone</td>  <td>confident saved because told so for each item. no extra time bc no extra steps not sure how to edit because textboxes gone</td>  <td>unsure if saved because looks like can still edit, short time because no extra steps just uncertainty. sure can edit because textboxes are still there </td></tr>
-<tr><td>Done</td>  <td>X</td>  <td>super confident that saved, annoyed, and long time because 2 extra steps</td> <td>confident saved because told so for each item and had to actively save. added tasks of tapping “done”. not sure how to edit because textboxes gone</td>  <td>fairly confident that saved bc actively said to save but not completely confident because textboxes still apparent, a bit long because some doubt so move slower and then extra step of saying done</td></tr>
-<tr><td>Notification</td>  <td>very confident because told so and actively had to do it and textboxes disappear. take a longer time because added </td>  <td>X</td>  <td>confident because told so, long time because it pauses you before continuing on to next task. not sure how to edit because textboxes </td> <td>fairly confident because told so but unsure because looks like can still edit, long time because it pauses you before continuing on to next task</td></tr>
-<tr><td>Green Check</td> <td>very confident because told so and actively had to do it and textboxes disappear. longer time because added tasks of tapping “done”</td>  <td>X</td>  <td>X</td>  <td>confident saved because told so for each item. no extra time bc no extra steps.sure can edit because textboxes are still there</td></tr>
-<tr><td>Combo of Three</td>  <td>notification+green+text sure saved because extra pop up said so and green check next to each one. and can edit because of box</td> <td>done +green+text confident saved because told so for each item. can edit. extra time because of extra button</td> <td>done+notification+green extra time because of extra button and pop up. confident saved bc multiple indicators. not sure if can edit bc no box</td> <td>done+notification+text confident can edit. sure saved because extra steps</td></tr>
-<tr><td>All Four</td> <td>confident because actively said done and got a notification but maybe some doubt because textboxes indicated can still edit but not really because the green checks will say that it is saved. very long time because multiple extra steps</td>  <td>done +green+text confident saved because told so for each item. can edit. extra time because of extra button</td>  <td></td>  <td></td></tr>
-  </tbody>
-</table>
-</div>
-
-In running our experiment, we would ideally test 10 subjects to get a data set that would point to what the average person might think. Unfortunately, we do not have time in the scope of this project, so we have set up two experiments with personal trainers and plan to test it a few more times with fellow students. 
-</p>
-<p>
-Each subject would do five iterations of the adding, saving, and editing workouts, each time with a different random combination of the variable factors. There are 16 different variations to test, so by having them complete five, they will help us get data for most of the variations while controlling for possible individual differences. We will not ask them to do all eight because that will become too repetitive for them and would take too much of the  subject’s time. We will also give each subject variable combinations in a random order to control for possible ordering effects as well as familiarity biases.  </p>
-
-<p>
-
-For example, Joanne would get a "done" button, and checkbox notifications on her first test, and on Robert's first test, he would get a "saved" notification, have no "done" button, and see textbox borders disappear after going to the next one. Our team has no prior experience in the design of controlled experiments, so we not only will take away useful design information from this test, but we will also apply what we learn in future experiments we may do outside of class. It will be interesting to understand how much and what types of reassurance users need in trusting that the program has saved their data inputs.  
-</p>
-</div>
-</div>
-</body>
 </html>
