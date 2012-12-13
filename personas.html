@@ -43,38 +43,33 @@
 <body>
 
 <div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-    <a class="brand" href="index.html">Soul Patch</a>
-    <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
+    <div class="navbar-inner">
+        <div class="container">
+        <a class="brand" href="index.html">Soul Patch</a>
+        <ul class="nav">
+            <li ><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design Process <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li ><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
+                <li ><a href="needs_analysis.html">Needs Analysis</a></li>
+                <li ><a href="interview.html">Design Development</a></li>
+                <li ><a href="DesignRefinement.html">Design Refinement</a>
+                <li ><a href="FinalDesignRefinement.html">Final Design Refinement</a>
+              </ul>
+            </li>
             <li class="active"><a href="personas.html">Personas</a></li>
-            <li><a href="needs_analysis.html">Needs Analysis</a></li>
-            <li><a href="interview.html">User Study</a></li>
-            <li ><a href="prototype2.html">Prototype</a></li>
-            <li> <a href="DesignRefinement.html">Design Refinement</a>
-              <li> <a href="FinalDesignRefinement.html">Final Design Refinement</a>
-    </ul>
-  </div>
-  </div>
+            <li><a href="prototype.html">Paper Prototype</a></li>
+            <li ><a href="prototype2.html">Final Prototype</a></li>
+            <li><a href="FinalWriteup.html">Final Writeup</a></li>
+        </ul>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-
 <div class="row">
-  <div class="span6">
-  <h2>Robert White the Gym Sergeant</h2>
-  <p class="age">Age 57</p>
-  <img class="img-polaroid" src="img/robert_white.jpg" width="150px" style="float:right;margin:1em;">
-    <h3>Background</h3>
-    <p>Rob is a disciplined, practical, and efficient trainer. With roots in an affluent family, he played sports at a young age, and became competitive in football and lacrosse. After achieving a masters in health and fitness at the University of Pittsburgh, Rob started his own gym, where he now teaches group fitness lessons, in addition to coaching kids basketball. In order to keep his business and personal life separate, Rob follows a strict daily regimen. Rob prefers to communicate with his clients via pamphlets, and blanket announcements to his team. He doesn't use a computer for scheduling, but instead writes down dates on a calendar posted in the gym lobby.</p>
-    <h3>Goals</h3>
-    <p>Now that he is older, he lives through his clients, wanting to make them fit and talented. With his traditional value of <em>working hard</em>, he wants to leave behind a legacy of athleticism, sportsmanship, and professionalism by reinforcing these ideas in all his clients. White also strongly advocates the power of self-innovation. He wants his clients to be the best kind of athlete, one who is responsible, knows discipline, and has the willpower to be the best. In this sense, <em>White sets the goals for his clients and pushes them to reach their full potential.</em> He is the quintessential old football coach in the sense that he wants his clients to be the best because he wants to create that tradition of success through his name and expertise.</p>
-
-  </div>
-
-  <div class="span6">
+    <div class="span6">
     <h2>Ben Sakai the Partner</h2>
 
     <p class="age">Age 28</p>
@@ -86,7 +81,17 @@
     <h3>Goals</h3>
     <p><em>Ben Sakai’s main goal is maintaining his own fitness.</em> As a former fat boy, he values the importance of keeping himself healthy and happy. Through his journey, he realized various tips that can help people also make the large, sometimes overwhelming, positive change in their lives. For Ben, he wants to help his clients achieve this new, healthy lifestyle through working together and making the right changes together. Ben helps people to keep himself motivated to be healthy as well because seeing his clients reminds him of how he used to be and what he needs to do to maintain how he is now. <em>He also feels great when he knows that he has taught someone well.</em> With this in mind, Ben constantly strives to be helpful to his clients but also steps ahead of his clients. He has to be in better shape than them. <em>He also finds it very rewarding to work with his clients when they make the same breakthroughs and realizations as he has.</em> He feels like a mentor and friend, which helps to continue acting as his impetus in this training profession.</p>
   </div>
-</div>
+  <div class="span6">
+  <h2>Robert White the Gym Sergeant</h2>
+  <p class="age">Age 57</p>
+  <img class="img-polaroid" src="img/robert_white.jpg" width="150px" style="float:right;margin:1em;">
+    <h3>Background</h3>
+    <p>Rob is a disciplined, practical, and efficient trainer. With roots in an affluent family, he played sports at a young age, and became competitive in football and lacrosse. After achieving a masters in health and fitness at the University of Pittsburgh, Rob started his own gym, where he now teaches group fitness lessons, in addition to coaching kids basketball. In order to keep his business and personal life separate, Rob follows a strict daily regimen. Rob prefers to communicate with his clients via pamphlets, and blanket announcements to his team. He doesn't use a computer for scheduling, but instead writes down dates on a calendar posted in the gym lobby.</p>
+    <h3>Goals</h3>
+    <p>Now that he is older, he lives through his clients, wanting to make them fit and talented. With his traditional value of <em>working hard</em>, he wants to leave behind a legacy of athleticism, sportsmanship, and professionalism by reinforcing these ideas in all his clients. White also strongly advocates the power of self-innovation. He wants his clients to be the best kind of athlete, one who is responsible, knows discipline, and has the willpower to be the best. In this sense, <em>White sets the goals for his clients and pushes them to reach their full potential.</em> He is the quintessential old football coach in the sense that he wants his clients to be the best because he wants to create that tradition of success through his name and expertise.</p>
+  </div>
+  </div>
+
 
 <div class="row">
   <div class="span6">
@@ -105,10 +110,12 @@
 <hr>
 
 <footer>
-<p>© 2012 Cypress Frankenfeld, Dana Lee, Sharon Tam, Noam Rubin</a></p>
+<p>© 2012 Cypress Frankenfeld, Dana Lee, Sharon Tam, Noam Rubin</p>
 </footer>
 
 </div> <!-- /container -->
 
+<script src="js/jq.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>  

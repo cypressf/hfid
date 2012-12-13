@@ -64,14 +64,21 @@
         <div class="container">
         <a class="brand" href="index.html">Soul Patch</a>
         <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li ><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
-            <li><a href="personas.html">Personas</a></li>
-            <li><a href="needs_analysis.html">Needs Analysis</a></li>
-            <li><a href="interview.html">User Study</a></li>
-            <li><a href="prototype2.html">Prototype</a></li>
-            <li class="active"> <a href="DesignRefinement.html">Design Refinement</a>
-            <li> <a href="FinalDesignRefinement.html">Final Design Refinement</a>
+            <li ><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design Process <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li ><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
+                <li ><a href="needs_analysis.html">Needs Analysis</a></li>
+                <li ><a href="interview.html">Design Development</a></li>
+                <li class="active"><a href="DesignRefinement.html">Design Refinement</a>
+                <li ><a href="FinalDesignRefinement.html">Final Design Refinement</a>
+              </ul>
+            </li>
+            <li ><a href="personas.html">Personas</a></li>
+            <li><a href="prototype.html">Paper Prototype</a></li>
+            <li ><a href="prototype2.html">Final Prototype</a></li>
+            <li><a href="FinalWriteup.html">Final Writeup</a></li>
         </ul>
         </div>
     </div>
@@ -136,24 +143,24 @@
             <h3>
             Entering Numbers
             </h3>
-            <ul class="thumbnails">
-            <li>
-            <div class="thumbnail">
-            <img src="img/designrefinementscrollnum.png" width="200px" alt="Number Scrolling">
-            <p>
-                Entering workouts with a scrolling control
-            </p>
+            <div class="row">
+                <div class="span3">
+                    <figure>
+                        <img src="img/designrefinementscrollnum.png" width="200px" alt="Number Scrolling">
+                        <figcaption><p>
+                            Entering workouts with a scrolling control
+                        </p></figcaption>
+                    </figure>
+                 </div>
+                <div class="span3">
+                    <figure>
+                        <img src="img/designrefinementnumpad.png" width="200px" alt="Number Pad">
+                        <figcaption><p>
+                            Entering workouts with a numeric pad
+                        </p></figcaption>
+                    </figure>
+                 </div>
             </div>
-            </li>
-            <li>
-            <div class="thumbnail">
-            <img src="img/designrefinementnumpad.png" width="200px" alt="Number Pad">
-            <p>
-                Entering workouts with a numeric pad
-            </p>
-            </div>
-            </li>
-            </ul>
             <p>
             With the problem reframing in mind, we knew that we had to make a fast and very 
             responsive interface. At first, we used a scroll interface to allow users to
@@ -233,17 +240,15 @@
             <h3>
             Searching and Selecting Workouts
             </h3>
-            <ul class="thumbnails">
-            <li>
-            <div class="thumbnail">
-            <img src="img/Designrefinementbody.jpeg" alt="Paper Prototype Body Search" width="200px">
-            <p>
-                Searching for workouts by selecting body parts
-            </p>
-            </div>
-            </li>
-            </ul>
-            
+            <div class="row">
+                <div class="span3" > 
+                    <figure>
+                        <img src="img/Designrefinementbody.jpeg" alt="Paper Prototype Body Search" width="200px">
+                        <figcaption> <p>Searching for workouts by selecting body parts </p> </figcaption>
+                     </figure>
+                </div>
+             </div>
+    
 
             <p>
             The low-fidelity prototype had three ways to search and select workouts: by 
@@ -351,8 +356,8 @@
 
             <a href="https://olin.mybalsamiq.com/projects/soulpatch/grid"> <h5>Go to our prototype</h5><img class="prototype-link" src="img/balsamiq_front_page.png" alt="Go to our Balsamiq prototype"></a>
             
-            <h2 id="he">Heuristic Evaluation</h2>
-            <iframe src="https://docs.google.com/file/d/0B44sGQjIRaMZLVl2djNsNGJzekE/preview" width="100%" height="480" frameborder="0"></iframe>
+            <a href="https://docs.google.com/file/d/0B44sGQjIRaMZLVl2djNsNGJzekE/preview"><h2 id="he">Heuristic Evaluation</h2></a>
+            <!-- <iframe src="https://docs.google.com/file/d/0B44sGQjIRaMZLVl2djNsNGJzekE/preview" width="100%" height="480" frameborder="0"></iframe> -->
 
             <h2 id="presentation">Class Presentation</h2>
             <iframe src="https://skydrive.live.com/embed?cid=B87D6A13133C9F52&resid=B87D6A13133C9F52%2132147&authkey=AFauJ-1R_lmn_h4&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
@@ -386,7 +391,7 @@
             </tr>
             <tr>
               <td>Presentation</td>
-              <td>0.1%</td>
+              <td>1%</td>
               <td>33%</td>
               <td>33%</td>
               <td>33%</td>
@@ -411,5 +416,7 @@
     </div>
 </div>
 
+<script src="js/jq.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

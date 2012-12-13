@@ -45,28 +45,32 @@
 <body>
 
 <div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-    <a class="brand" href="index.html">Soul Patch</a>
-    <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
-            <li><a href="personas.html">Personas</a></li>
-            <li><a href="needs_analysis.html">Needs Analysis</a></li>
-            <li><a href="interview.html">User Study</a></li>
-            <li class="active"><a href="prototype2.html">Prototype</a></li>
-            <li> <a href="DesignRefinement.html">Design Refinement</a>
-           <li> <a href="FinalDesignRefinement.html">Final Design Refinement</a>
-    </ul>
-  </div>
-  </div>
+    <div class="navbar-inner">
+        <div class="container">
+        <a class="brand" href="index.html">Soul Patch</a>
+        <ul class="nav">
+            <li ><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design Process <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li ><a href="inspirationaldesigns.html">Inspirational Designs</a></li>
+                <li ><a href="needs_analysis.html">Needs Analysis</a></li>
+                <li ><a href="interview.html">Design Development</a></li>
+                <li ><a href="DesignRefinement.html">Design Refinement</a>
+                <li ><a href="FinalDesignRefinement.html">Final Design Refinement</a>
+              </ul>
+            </li>
+            <li ><a href="personas.html">Personas</a></li>
+            <li class="active"><a href="prototype.html">Paper Prototype</a></li>
+            <li><a href="prototype2.html">Final Prototype</a></li>
+            <li><a href="FinalWriteup.html">Final Writeup</a></li>
+        </ul>
+        </div>
+    </div>
 </div>
-
 <div class="container">
-<p>
-  We've gone from paper prototypes to Balsamiq mockups to an almost-fully functional web application. Nearly all of the functionality is there, but what isn't implemented is indicated. So, go ahead!
-</p>
-<a href="http://soulpatch.herokuapp.com" class="proto"> Try it out!</a>
+<iframe class="proto" height="600px" width="100%" src="https://olin.mybalsamiq.com/projects/soulpatch/naked/homescreen_dave?key=7e439cbe470fb3b82f6d08de64e3018176d68556
+" style="overflow:hidden;border:none;"></iframe>
 
 <footer>
 <p>© 2012 Cypress Frankenfeld, Dana Lee, Sharon Tam, Noam Rubin</p>
@@ -74,5 +78,7 @@
 
 </div> <!-- /container -->
 
+<script src="js/jq.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>  

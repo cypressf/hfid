@@ -22,7 +22,7 @@
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js">
-                                                                                                                        
+                                                                                                                                    
             </script>
         <![endif]-->
     </head>
@@ -36,26 +36,36 @@
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li>
-                            <a href="inspirationaldesigns.html">Inspirational Designs</a>
-                        </li>
-                        <li>
-                            <a href="personas.html">Personas</a>
-                        </li>
-                        <li>
-                            <a href="needs_analysis.html">Needs Analysis</a>
-                        </li>
-                        <li>
-                            <a href="interview.html">User Study</a>
-                        </li>
-                        <li>
-                            <a href="prototype2.html">Prototype</a>
-                        </li>
-                        <li>
-                            <a href="DesignRefinement.html">Design Refinement</a>
-                        </li>
-                        <li class="active">
-                            <a href="FinalDesignRefinement.html">Final Design Refinement</a>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design Process <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="inspirationaldesigns.html">Inspirational Designs</a>
+                                </li>
+                                <li>
+                                    <a href="needs_analysis.html">Needs Analysis</a>
+                                </li>
+                                <li>
+                                    <a href="interview.html">Design Development</a>
+                                </li>
+                                <li>
+                                    <a href="DesignRefinement.html">Design Refinement</a>
+                                    <li class="active">
+                                        <a href="FinalDesignRefinement.html">Final Design Refinement</a>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="personas.html">Personas</a>
+                            </li>
+                            <li>
+                                <a href="prototype.html">Paper Prototype</a>
+                            </li>
+                            <li>
+                                <a href="prototype2.html">Final Prototype</a>
+                            </li>
+                            <li>
+                                <a href="FinalWriteup.html">Final Writeup</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -821,14 +831,12 @@
                             &quot;Workouts Saved&quot; Notification
                         </h5>
                         <p>
-                          <img  src="img/workouts_saved.png"  style="float:right;margin-left:1em">
-
+                            <img src="img/workouts_saved.png" style="float:right;margin-left:1em">
                             Ryan thought the &quot;Workouts Saved&quot; notification that appeared
                             at the top of the screen was worrisome because it only appeared for a second,
                             it slid in and out like an &quot;alert&quot; and he didn&#39;t get a chance
                             to read it. He felt that he had possibly missed an &quot;error message.&quot;
                         </p>
-
                         <p>
                             Ryan preferred the workouts form without a done button , with checkmarks
                             , and without &quot;saved&quot; notifications . &quot;why would you have
@@ -877,30 +885,138 @@
                             Work distribution
                         </h2>
                         <table class="table">
-                          <thead>
-                        <tr><td></td><td>Cypress</td>
-                          <td>Dana</td>
-                        <td>Noam</td>
-                         <td>Sharon</td></tr>
-                      </thead>
-                      <tbody>
-                        <tr><td>Website</td><td>45</td><td>0</td><td>40</td><td>5</td></tr>
-                        <tr><td>Experimental Design</td>
-                          <td>25</td>
-                        <td>25</td>
-                        <td>25</td>
-                        <td>25</td></tr>
-                        <tr><td>Presentation</td><td>25</td><td>25</td><td>25</td><td>25</td></tr>
-                        <tr><td>Prototype Redesign</td><td>30</td><td>20</td><td>30</td><td>20</td></tr>
-                        <tr><td>Prototype Code</td><td>50</td><td>0</td><td>50</td><td>0</td></tr>
-                        <tr><td>Interviews</td><td>30</td><td>20</td><td>30</td><td>20</td></tr>
-                      </tbody>
-                      </table>
-
+                            <thead>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Cypress
+                                    </td>
+                                    <td>
+                                        Dana
+                                    </td>
+                                    <td>
+                                        Noam
+                                    </td>
+                                    <td>
+                                        Sharon
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Website
+                                    </td>
+                                    <td>
+                                        45
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        40
+                                    </td>
+                                    <td>
+                                        5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Experimental Design
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Presentation
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                    <td>
+                                        25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Prototype Redesign
+                                    </td>
+                                    <td>
+                                        30
+                                    </td>
+                                    <td>
+                                        20
+                                    </td>
+                                    <td>
+                                        30
+                                    </td>
+                                    <td>
+                                        20
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Prototype Code
+                                    </td>
+                                    <td>
+                                        50
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        50
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Interviews
+                                    </td>
+                                    <td>
+                                        30
+                                    </td>
+                                    <td>
+                                        20
+                                    </td>
+                                    <td>
+                                        30
+                                    </td>
+                                    <td>
+                                        20
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </article>
                 </div>
             </div>
-            <!-- container -->
+        </div>
+        <!-- container -->
+        <script src="js/jq.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
     </body>
 
 </html>
